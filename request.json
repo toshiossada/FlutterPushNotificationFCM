@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "1d2e1f1a-c16f-4829-8bba-48f6304698c7",
+		"name": "FCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FCM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAB1Aabzg:APA91bES5laK5u3Q8mZSdxb9vM1NsHnQSKRkyku42F4sP565gqIHyCs-iFQXIjDNq1duZsTvAJkN7dtPxOdcBiTdCUTJpt7GQJSTJaPjIeJdE0XAd6LQjpTM_sCR5CVdbqWmcix5Jdu4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"notification\": {\r\n        \"body\": \"teste\",\r\n        \"title\": \"teste\"\r\n    },\r\n    \"priority\": \"high\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"click_action\": \"FLUTTER_NOTIFICATION_CLICK\",\r\n        \"payload\":{\r\n            \"type\": \"chatMessage\",\r\n            \"message\": \"balbalbal\"\r\n        }\r\n    },\r\n    \"to\": \"dn25knoyTKmhxCrDi-Wfxt:APA91bEN4yavdoEoJHpdPMt4Ma5GoKD3pfIndw_uGhwNfjYrqzd17GWQz06WiWr_T9NxmZ5aGRrpG1Aavci8muiddnxwhCJiIAwdEiPqQF4sk-P_u1O_nhqxgHIu2BggC4oH50mAxgBo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
